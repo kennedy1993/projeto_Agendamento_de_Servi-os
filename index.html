@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento de Serviços</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Agendamento de Serviços</h1>
+      <form id="agendamentoForm">
+        <label for="servicos">Escolha os serviços:</label>
+        <select id="servicos" multiple>
+          <option value="Corte de Cabelo">Corte de Cabelo</option>
+          <option value="Manicure">Manicure</option>
+          <option value="Massagem">Massagem</option>
+        </select>
+
+        <label for="data">Escolha a data:</label>
+        <input type="date" id="data" required />
+
+        <button type="submit">Agendar</button>
+      </form>
+
+      <h2>Seus Agendamentos</h2>
+      <ul id="listaAgendamentos"></ul>
+
+      <h2>Histórico de Agendamentos</h2>
+      <input type="date" id="historicoInicio" />
+      <input type="date" id="historicoFim" />
+      <button id="verHistorico">Ver Histórico</button>
+      <ul id="listaHistorico"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
